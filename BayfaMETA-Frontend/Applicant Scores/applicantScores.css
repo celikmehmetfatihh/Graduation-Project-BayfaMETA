@@ -1,0 +1,166 @@
+:root {
+  --container-width: 1000px;
+}
+
+body {
+  font-family: Arial;
+  font-size: 16px;
+  background-color: #f8f8f8;
+}
+
+.header-part {
+  background-color: #e6f2ff;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  border-top: 3px solid #4e73df;
+  border-bottom: 3px solid #4e73df;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #4e73df;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+table {
+  margin: auto;
+  font-weight: bold;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  border: 3.5px solid #4e73df;
+  border-radius: 5px;
+  box-shadow: 10px 10px 0 #e6f2ff;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  color: #000000;
+  border: 1px solid #e6f2ff;
+}
+
+th {
+  background-color: #4e73df;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+tr:nth-child(even) td {
+  background-color: #e6f2ff;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #000000;
+}
+
+.score {
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
+}
+
+.filter,
+.sort {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filter,
+.sort label {
+  margin-right: 10px;
+}
+
+.filter,
+.sort select {
+  font-size: 14px;
+  padding: 5px 10px;
+  border: 1px solid #e6f2ff;
+  border-radius: 3px;
+  color: #333;
+  cursor: pointer;
+}
+
+.filter,
+.sort select:focus {
+  outline: none;
+  border-color: #4e73df;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  background-color: #e6f2ff;
+  border: 1px solid #4e73df;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  background-color: #4e73df;
+  color: white;
+}
+
+.navbar a.active {
+  background-color: #4e73df;
+  color: white;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container {
+  float: none;
+  margin: 0 10px;
+}
+
+.search-container input[type="text"] {
+  width: 250px;
+  padding: 6px;
+  margin: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #4e73df;
+}
+
+.filtering-container,
+.sorting-container {
+  float: none;
+  margin: 0 15px;
+}
+
+.filtering-container select,
+.sorting-container select {
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #4e73df;
+}

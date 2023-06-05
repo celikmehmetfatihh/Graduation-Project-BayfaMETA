@@ -1,0 +1,80 @@
+{
+    "UserId": "1",
+    "PositionId": "1",
+    "Name": "John Doe",
+    "Email": "johndoe@example.com",
+    "PhoneNumber": "+1 (555) 123-4567",
+    "Education": [
+        {
+            "Institution": "University of California, Berkeley",
+            "Degree": "Bachelor of Science",
+            "Field": "Computer Science",
+            "GPA": 3.8
+        },
+        {
+            "Institution": "Stanford University",
+            "Degree": "Master of Science",
+            "Field": "Computer Science",
+            "GPA": 3.9
+        }
+    ],
+    "TechnicalSkills": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "React",
+        "Node.js",
+        "Git"
+    ],
+    "SoftSkills": [
+        "Communication",
+        "Teamwork",
+        "Problem-solving",
+        "Time management"
+    ],
+    "Experience": [
+        {
+            "Title": "Software Developer",
+            "Company": "Acme Inc.",
+            "Duration": 1,
+            "SkillsUsed": [
+                "Python",
+                "Java",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "React",
+                "Node.js",
+                "Git"
+            ]
+        },
+        {
+            "Title": "Software Engineering Intern",
+            "Company": "Beta Corp.",
+            "Duration": 2,
+            "SkillsUsed": [
+                "Python",
+                "Java",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "React",
+                "Node.js",
+                "Git"
+            ]
+        }
+    ],
+    "JobKeywords": [
+        "Java",
+        "C#",
+        "Python",
+        "SQL",
+        "Project Management",
+        "Agile Methodology",
+        "Problem Solving",
+        "Communication",
+        "Collaboration"
+    ]
+}

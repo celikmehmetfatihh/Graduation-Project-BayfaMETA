@@ -1,0 +1,12 @@
+:root {
+  --container-width: 1000px;
+}
+
+#body-first-child {
+  margin-bottom: 20px;
+}
+
+#txtSearch {
+  width: 45%;
+  display: inline-block;
+}

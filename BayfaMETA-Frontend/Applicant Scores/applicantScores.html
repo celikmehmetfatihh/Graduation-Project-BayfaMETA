@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Applicant Scores</title>
+    <link rel="stylesheet" type="text/css" href="applicantScores.css" />
+  </head>
+  <body>
+    <div class="popup-container">
+      <!-- Part 1: Header section -->
+      <header>
+        <div class="container">
+          <div class="header-part">
+            <h1>Application Scores</h1>
+          </div>
+        </div>
+      </header>
+
+      <!-- Part 2: Navigation bar section -->
+      <nav class="navbar">
+        <div class="container">
+          <div class="search-container">
+            <input type="text" placeholder="Search an applicant" />
+          </div>
+          <div class="filtering-container">
+            <select id="filter">
+              <option value="all">Filter By</option>
+              <option value="part1">Part 1</option>
+              <option value="part2">Part 2</option>
+              <option value="part3">Overall Score</option>
+            </select>
+          </div>
+          <div class="sorting-container">
+            <select id="sort">
+              <option value="default">Sort By</option>
+              <option value="cv-matching-score">Keyword Matching Score</option>
+              <option value="cv-score">CV Score</option>
+              <option value="interview-score">Interview Score</option>
+              <option value="technical-score">Technical Test Score</option>
+              <option value="overall-score">Overall Score</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Part 3: Table section -->
+      <section class="table">
+        <div class="container">
+          <table>
+            <thead>
+              <tr>
+                <th id="fullname">Fullname</th>
+                <th id="email">Email Address</th>
+                <th id="telNo">Phone Number</th>
+                <th id="cv-matching-score">Keyword Matching Score</th>
+                <th id="cv-score">CV Score</th>
+                <th id="interview-score">Video Interview Score</th>
+                <th id="technical-score">Technical Test Score</th>
+                <th id="overall-score">Overall Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td class="part1 cv-matching-score"></td>
+                <td class="part1 cv-score"></td>
+                <td class="part2 interview-score"></td>
+                <td class="part2 technical-score"></td>
+                <td class="part3 overall-score"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <span>&copy; 2023 All rights reserved, BayfaMeta&reg</span>
+    </footer>
+
+    <script src="applicantScores.js"></script>
+  </body>
+</html>

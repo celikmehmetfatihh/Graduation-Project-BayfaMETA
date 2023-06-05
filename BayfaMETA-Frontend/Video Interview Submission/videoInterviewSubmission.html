@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Interview</title>
+    <link rel="stylesheet" href="videoInterviewSubmission.css" />
+  </head>
+  <body>
+    <div class="part-section">
+      <h2>Video Interview Submission</h2>
+
+      <div class="guidelines">
+        <p>
+          Please follow these guidelines to ensure a successful video interview:
+        </p>
+        <ul>
+          <li>
+            Understand the topic and research as needed before recording your
+            response.
+          </li>
+          <li>Choose a quiet, well-lit space for recording your video.</li>
+          <li>Dress professionally as you would for an in-person interview.</li>
+          <li>Keep your response focused and to the point.</li>
+          <li>Speak clearly and naturally.</li>
+          <li>
+            Practice speaking about the topic before recording if possible.
+          </li>
+          <li>Take advantage of unlimited attempts if offered.</li>
+          <li>Review your response before submitting.</li>
+        </ul>
+      </div>
+
+      <div class="privacy-policy">
+        <input
+          type="checkbox"
+          id="privacy-policy-checkbox"
+          name="privacy-policy-checkbox"
+        />
+        <label for="privacy-policy-checkbox"
+          >By proceeding, you agree to our
+          <a href="https://example.com/privacy-policy" target="_blank"
+            >Privacy Policy</a
+          >
+          on how we use and protect your information during the recruitment
+          process.</label
+        >
+      </div>
+
+      <button
+        class="show-section-button"
+        id="show-video-section"
+        type="button"
+        style="display: none"
+      >
+        Record a Video
+      </button>
+      <button
+        class="show-section-button"
+        id="show-file-section"
+        type="button"
+        style="display: none"
+      >
+        Upload a File
+      </button>
+
+      <div id="video-section" style="display: none">
+        <h3 class="interview-topic" id="interview-topic">Interview Topic</h3>
+        <div class="video-container">
+          <div class="timer-container">
+            <div id="timer" class="timer"></div>
+          </div>
+          <video id="video" autoplay muted></video>
+        </div>
+        <br />
+        <button id="record" class="video-capture-button" type="button">
+          Start Recording
+        </button>
+      </div>
+
+      <div id="file-section" style="display: none">
+        <form id="file-upload-form" enctype="multipart/form-data">
+          <div class="file-upload-wrapper">
+            <div class="file-upload">
+              <div class="spacer"></div>
+              <input
+                type="file"
+                id="uploadedFile"
+                name="uploadedFile"
+                accept=".mp4"
+                required
+              />
+            </div>
+          </div>
+          <button class="form-submit-button" type="submit">Upload</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <span>&copy; 2023 All rights reserved, BayfaMeta&reg</span>
+    </footer>
+
+    <script src="videoInterviewSubmission.js"></script>
+  </body>
+</html>

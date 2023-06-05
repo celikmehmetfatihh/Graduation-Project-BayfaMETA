@@ -1,0 +1,437 @@
+:root {
+  --container-width: 1000px;
+}
+
+body {
+  background-color: #e1e8ff;
+  font-family: Arial;
+}
+
+.form-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 40px;
+  color: #000000;
+}
+
+h3 {
+  white-space: nowrap;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.form-row {
+  align-items: center;
+  text-align: left;
+  margin-bottom: 5px !important;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+div.form-row {
+  display: flex;
+}
+
+.form-row label {
+  flex-shrink: 0;
+  margin-bottom: 5px;
+  width: 150px;
+  font-size: 16px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="number"] {
+  flex: 1 0 0;
+  flex-basis: 0;
+  max-width: 250px;
+  font-size: 14px;
+}
+
+.form-row span {
+  font-size: 14px !important;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.input-group {
+  align-items: center;
+}
+
+.input-group input {
+  margin-right: 0.5em;
+  width: 5em;
+}
+
+.short-input {
+  width: 100% !important;
+  max-width: 100px !important;
+  text-align: center !important;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 30%;
+  padding: 10px;
+  border: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  font-size: 16px;
+  color: #000000;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 15px;
+  border: 2px solid #f2f2f2;
+  font-size: 16px;
+  color: #000000;
+}
+
+.cv-form-header {
+  overflow: hidden;
+  border-top: 5px solid #4e73df;
+  border-bottom: 5px solid #4e73df;
+  margin: 20px auto;
+  width: var(--container-width);
+  background-color: #ffffff;
+  padding-bottom: 25px;
+  padding-top: 35px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 15px;
+  font-size: 30px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.cv-form-header h2 {
+  margin-bottom: 10px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.cv-form-header p {
+  font-size: 18px;
+  margin-top: 30px !important;
+}
+
+.part-section {
+  overflow: hidden;
+  border-left: 5px solid #4e73df;
+  border-right: 5px solid #4e73df;
+  margin: 20px auto;
+  width: var(--container-width);
+  background-color: #ffffff;
+  padding: 30px;
+  font-size: 16px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+  align-self: center;
+}
+
+.part-section h2 {
+  border-bottom: 1.5px solid rgb(110, 110, 110);
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+
+.inline-label {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.inline-input {
+  display: inline-block;
+}
+
+.phone-inputs {
+  display: flex;
+  align-items: stretch;
+  margin-top: 5px;
+}
+
+.phone-inputs input {
+  max-width: 60px !important;
+  text-align: center;
+  font-size: 1.5em;
+  border: none;
+}
+
+.phone-inputs span {
+  font-size: 1.5em;
+  align-self: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+select#countryCode {
+  max-width: 90px;
+  appearance: none;
+  width: 50%;
+  padding: 10px;
+  border: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  font-size: 10px;
+  color: #000000;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+button[type="submit"] {
+  background-color: #4e73df;
+  color: #ffffff;
+  padding: 10px 45px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 25px auto;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  display: block;
+}
+
+button[type="submit"]:hover {
+  background-color: darkblue;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#technicalSkillsList {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: bold;
+  padding-right: 3px;
+}
+
+#technicalSkillsList > div {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  padding: 5px 10px;
+  border-radius: 5px;
+  align-items: center;
+}
+d16811 #technicalSkillsList > div > span {
+  margin-right: 5px;
+}
+
+#technicalSkillsList > div > button {
+  margin-left: 5px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+}
+
+#addTechnicalSkillButton {
+  background-color: #4e73df;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 100%;
+}
+
+.remove-technicalSkill-button {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  padding: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 14px;
+  height: 100%;
+}
+
+#softSkillsList {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: bold;
+  padding-right: 3px;
+}
+
+#softSkillsList > div {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  padding: 5px 10px;
+  border-radius: 5px;
+  align-items: center;
+}
+d16811 #softSkillsList > div > span {
+  margin-right: 5px;
+}
+
+#softSkillsList > div > button {
+  margin-left: 5px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+}
+
+#addSoftSkillButton {
+  background-color: #4e73df;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 100%;
+}
+
+.remove-softSkill-button {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  padding: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 14px;
+  height: 100%;
+}
+
+.usedSkillsList {
+  margin-top: 10px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: bold;
+  padding-right: 3px;
+}
+
+.usedSkillsList > div {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  padding: 5px 10px;
+  border-radius: 5px;
+  align-items: center;
+}
+d16811 .usedSkillsList > div > span {
+  margin-right: 5px;
+}
+
+.usedSkillsList > div > button {
+  margin-left: 5px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+}
+
+.addUsedSkillButton {
+  background-color: #4e73df;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 100%;
+}
+
+.remove-usedSkill-button {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  padding: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 14px;
+  height: 100%;
+}
+
+.clone-button {
+  background-color: #4e73df;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.clone-button:hover {
+  background-color: darkblue;
+}
+
+.popup {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.popup-content {
+  position: absolute;
+  background-color: #fff;
+  padding: 30px;
+  border: none;
+  border-radius: 10px;
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.close-button {
+  color: #777;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  background: transparent;
+}
+
+.close-button:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.success-message {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}

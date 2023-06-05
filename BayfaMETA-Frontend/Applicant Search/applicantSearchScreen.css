@@ -1,0 +1,25 @@
+:root {
+  --container-width: 1000px;
+}
+
+#moreInfoButton {
+  display: inline-block;
+  padding: 2px 5px;
+  border: 5px solid gray;
+  text-align: center;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  font-size: large;
+  font-weight: 600;
+  font-size: smaller;
+}
+
+#body-first-child {
+  margin-bottom: 20px;
+}
+
+#txtSearch {
+  width: 45%;
+  display: inline-block;
+}

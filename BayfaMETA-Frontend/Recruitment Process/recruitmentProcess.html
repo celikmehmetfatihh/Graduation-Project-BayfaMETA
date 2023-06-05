@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html>
+    <head>
+      <title>New Recruitment Process</title>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+      <link rel="stylesheet" type="text/css" href="recruitmentProcess.css" />
+      <!-- Custom fonts for this template-->
+      <link
+        href="../Home Page/vendor/fontawesome-free/css/all.min.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet"
+      />
+
+      <!-- Custom styles for this template-->
+      <link href="../Home Page/css/sb-admin-2.min.css" rel="stylesheet" />
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+      />
+    </head>
+
+    <body id="page-top">
+      <!-- Page Wrapper -->
+      <div id="wrapper">
+        <!-- Sidebar -->
+        <ul
+          class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+          id="accordionSidebar"
+        >
+          <!-- Sidebar - Brand -->
+          <a
+            class="sidebar-brand d-flex align-items-center justify-content-center"
+            style="height: 8rem"
+            href="../Home Page/homePage.html"
+          >
+            <img
+              src="../Login-Registration/img/logo.png"
+              alt="BayfaMeta Logo"
+              class="logo"
+              style="height: 6rem; width: auto"
+              id="logo"
+            />
+          </a>
+
+          <!-- Divider -->
+          <hr class="sidebar-divider my-0" />
+
+          <!-- Nav Item - Dashboard -->
+          <li class="nav-item active">
+            <a class="nav-link" href="../Home Page/homePage.html">
+              <i class="fa fa-home" aria-hidden="true"></i>
+              <span class="nav-text">Home</span>
+            </a>
+          </li>
+
+          <!-- Divider -->
+          <hr class="sidebar-divider" />
+
+          <!-- Heading -->
+          <div
+            class="sidebar-heading"
+            style="
+              display: flex;
+              justify-content: center;
+              font-size: large;
+              color: white;
+            "
+            id="menuText"
+          >
+            Menu
+          </div>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="../Position Search/positionSearchScreen.html"
+            >
+              <i
+                class="fa fa-list-alt"
+                aria-hidden="true"
+                style="color: white"
+              ></i>
+              <span class="nav-text">Display Positions</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              style="padding-top: 0"
+              href="../Recruitment Process/recruitmentProcess.html"
+            >
+              <i
+                class="fa fa-address-card"
+                aria-hidden="true"
+                style="color: white"
+              ></i>
+              <span class="nav-text">Start New Recruitment</span>
+            </a>
+          </li>
+
+          <!-- Divider -->
+          <hr class="sidebar-divider d-none d-md-block" />
+
+          <!-- Sidebar Toggler (Sidebar) -->
+          <div class="text-center d-none d-md-inline">
+            <button class="rounded-circle border-0" id="sidebarToggle"></button>
+          </div>
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+          <!-- Main Content -->
+          <div id="content">
+            <!-- Topbar -->
+            <nav
+              class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"
+            >
+              <!-- Sidebar Toggle (Topbar) -->
+              <button
+                id="sidebarToggleTop"
+                class="btn btn-link d-md-none rounded-circle mr-3"
+              >
+                <i class="fa fa-bars"></i>
+              </button>
+              <!-- Topbar Navbar -->
+              <ul class="navbar-nav ml-auto">
+                <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                <li class="nav-item dropdown no-arrow d-sm-none">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="searchDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-search fa-fw"></i>
+                  </a>
+                  <!-- Dropdown - Messages -->
+                  <div
+                    class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                    aria-labelledby="searchDropdown"
+                  >
+                    <form class="form-inline mr-auto w-100 navbar-search">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control bg-light border-0 small"
+                          placeholder="Search for..."
+                          aria-label="Search"
+                          aria-describedby="basic-addon2"
+                        />
+                        <div class="input-group-append">
+                          <button class="btn btn-primary" type="button">
+                            <i class="fas fa-search fa-sm"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </li>
+                <a
+                  class="nav-item dropdown no-arrow"
+                  href="../Login-Registration/login.html"
+                >
+                  <i
+                    class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"
+                  ></i>
+                  Logout
+                </a>
+              </ul>
+            </nav>
+            <!-- End of Topbar -->
+
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
+              <section class="recruitment-process-header">
+                <h3>Recruitment Form: Find Your Next Team Member</h3>
+              </section>
+              <form id="recruitmentProcessForm">
+                <section class="part-section">
+                  <div class="form-row">
+                    <label for="jobTitle">Job Title</label>
+                    <input
+                      type="text"
+                      id="jobTitle"
+                      list="jobTitleSuggestions"
+                      placeholder="Search for a job title"
+                      required
+                    />
+                  </div>
+                  <datalist id="jobTitleSuggestions"></datalist><br />
+                  <div class="form-row">
+                    <label for="jobDescription">Job Description</label>
+                    <input
+                      type="text"
+                      id="jobDescription"
+                      name="jobDescription"
+                      required
+                    />
+                  </div>
+                  <br />
+                  <div class="form-row">
+                    <label for="numberOfPeople">Number Of People</label>
+                    <input
+                      class="short-input"
+                      type="number"
+                      step="1"
+                      min="1"
+                      value="1"
+                      id="numberOfPeople"
+                      name="numberOfPeople"
+                      required
+                    />
+                  </div>
+                  <br />
+                  <h3
+                    style="
+                      padding-top: 20px;
+                      border-bottom: 1.5px solid rgb(110, 110, 110);
+                      width: 17%;
+                    "
+                  >
+                    DUE DATES
+                  </h3>
+                  <div class="form-row">
+                    <label for="firstStageEndDate">First Stage Date</label>
+                    <input
+                      id="firstStageEndDate"
+                      name="firstStageEndDate"
+                      required
+                    />
+                  </div>
+                  <br />
+                  <div class="form-row">
+                    <label for="secondStageEndDate">Second Stage Date</label>
+                    <input
+                      id="secondStageEndDate"
+                      name="secondStageEndDate"
+                      required
+                    />
+                  </div>
+                  <br />
+                  <h3
+                    style="
+                      padding-top: 20px;
+                      border-bottom: 1.5px solid rgb(110, 110, 110);
+                      width: 40%;
+                    "
+                  >
+                    TOTAL SCORE MULTIPLIERS
+                  </h3>
+                  <div class="multipliers">
+                    <label for="resumeMultiplier">Resume</label>
+                    <input
+                      type="number"
+                      step="5"
+                      min="5"
+                      max="100"
+                      value="30"
+                      id="resumeMultiplier"
+                      name="resumeMultiplier"
+                      required
+                    />
+                    <label for="videoInterviewMultiplier"
+                      >Video Interview</label
+                    >
+                    <input
+                      type="number"
+                      step="5"
+                      min="5"
+                      max="100"
+                      value="30"
+                      id="videoInterviewMultiplier"
+                      name="videoInterviewMultiplier"
+                      required
+                    />
+                    <label for="technicalTestMultiplier">Technical Test</label>
+                    <input
+                      type="number"
+                      step="5"
+                      min="5"
+                      max="100"
+                      value="40"
+                      id="technicalTestMultiplier"
+                      name="technicalTestMultiplier"
+                      required
+                    />
+                  </div>
+                  <br />
+                </section>
+
+                <section class="part-section">
+                  <h2>PART I: Keyword Matching, CV Scoring</h2>
+                  &emsp;&emsp;&emsp;
+                  <div id="jobPositionsContainer">
+                    <div class="form-row">
+                      <label for="jobPosition1">Job Positions</label>
+                      <input type="text" id="jobPosition1" />
+                      <div class="input-group-append">
+                        <button type="button" id="addJobPositionButton">
+                          Add
+                        </button>
+                      </div>
+                    </div>
+                    <div id="jobPositionsList"></div>
+                  </div>
+                  <div class="form-row">
+                    <span id="currentPositionsDisplay"></span>
+                  </div>
+                  <br />
+                  <div id="requiredSkillsContainer">
+                    <div class="form-row">
+                      <label for="requiredSkill1">Required Skills</label>
+                      <input type="text" id="requiredSkill1" />
+                      <div class="input-group-append">
+                        <button type="button" id="addRequiredSkillButton">
+                          Add
+                        </button>
+                      </div>
+                    </div>
+                    <div id="requiredSkillsList"></div>
+                  </div>
+                  <div class="form-row">
+                    <span id="currentSkillsDisplay"></span>
+                  </div>
+                  <br />
+                  <div class="form-row">
+                    <label for="minExperience">Min-Experience</label>
+                    <input
+                      class="short-input"
+                      type="number"
+                      step="0.5"
+                      min="0"
+                      max="50"
+                      id="minExperience"
+                      name="minExperience"
+                      value="1"
+                      required
+                    />
+                    <span class="font-size: 15px">&nbsp;year(s)</span>
+                  </div>
+                  <br />
+                  <div class="form-row">
+                    <label for="firstStageThreshold">Stage Threshold</label>
+                    <input
+                      class="short-input"
+                      type="number"
+                      step="5"
+                      min="0"
+                      max="100"
+                      id="firstStageThreshold"
+                      name="firstStageThreshold"
+                      value="100"
+                      required
+                    />
+                    <span>&nbsp;%</span>
+                  </div>
+                  <br />
+                  <h3
+                    style="
+                      padding-top: 20px;
+                      border-bottom: 1.5px solid rgb(110, 110, 110);
+                      width: 30%;
+                    "
+                  >
+                    SCORE MULTIPLIERS
+                  </h3>
+                  <div class="multipliers">
+                    <label for="eduMultiplier" class="inline-label"
+                      >Education</label
+                    >
+
+                    <input
+                      type="number"
+                      step="5"
+                      min="5"
+                      max="100"
+                      id="eduMultiplier"
+                      name="eduMultiplier"
+                      value="20"
+                      required
+                    />
+                    <label for="expMultiplier" class="inline-label"
+                      >Experience</label
+                    >
+
+                    <input
+                      type="number"
+                      step="5"
+                      min="5"
+                      max="100"
+                      id="expMultiplier"
+                      name="expMultiplier"
+                      value="20"
+                      required
+                    />
+                    <label for="techSkillsMultiplier" class="inline-label"
+                      >Tech Skills</label
+                    >
+
+                    <input
+                      type="number"
+                      step="5"
+                      min="5"
+                      max="100"
+                      id="techSkillsMultiplier"
+                      name="techSkillsMultiplier"
+                      value="20"
+                      required
+                    />
+                    <label for="softSkillsMultiplier" class="inline-label"
+                      >Soft Skills</label
+                    >
+
+                    <input
+                      type="number"
+                      step="5"
+                      min="5"
+                      max="100"
+                      id="softSkillsMultiplier"
+                      name="softSkillsMultiplier"
+                      value="20"
+                      required
+                    />
+                    <label for="keywordMultiplier" class="inline-label"
+                      >Matching-Keywords</label
+                    >
+
+                    <input
+                      type="number"
+                      step="5"
+                      min="5"
+                      max="100"
+                      id="keywordMultiplier"
+                      name="keywordMultiplier"
+                      value="20"
+                      required
+                    />
+                  </div>
+                </section>
+
+                <section class="part-section">
+                  <h2>PART II: Video Interview, Technical Questions</h2>
+                  <br />
+                  <div id="interviewTopicsContainer">
+                    <div class="form-row">
+                      <label for="interviewTopic1">Interview Topics</label>
+                      <input type="text" id="interviewTopic1" />
+                      <div class="input-group-append">
+                        <button type="button" id="addInterviewTopicButton">
+                          Add
+                        </button>
+                      </div>
+                    </div>
+                    <div id="interviewTopicsList"></div>
+                  </div>
+                  <div class="form-row">
+                    <span id="currentTopicsDisplay"></span>
+                  </div>
+                  <br />
+                  <div class="form-row">
+                    <label for="allocatedTime">Interview Time</label>
+                    <input
+                      class="short-input"
+                      type="number"
+                      step="1"
+                      min="5"
+                      max="20"
+                      value="5"
+                      id="allocatedTime"
+                      name="allocatedTime"
+                      required
+                    />
+                    <span class="font-size: 15px">&nbsp;minute(s)</span>
+                  </div>
+                  <br />
+                  <div class="form-row">
+                    <label for="allocatedTime">Question Time</label>
+                    <input
+                      class="short-input"
+                      type="number"
+                      step="1"
+                      min="30"
+                      max="180"
+                      value="30"
+                      id="questionTime"
+                      name="questionTime"
+                      required
+                    />
+                    <span class="font-size: 15px">&nbsp;second(s)</span>
+                  </div>
+                  <br />
+                  <h3
+                    style="
+                      padding-top: 20px;
+                      border-bottom: 1.5px solid rgb(110, 110, 110);
+                      width: 40%;
+                    "
+                  >
+                    PERSONALITY MULTIPLIERS
+                  </h3>
+                  <div class="multipliers">
+                    <label for="openness" class="inline-label">Openness</label>
+
+                    <input
+                      type="number"
+                      step="5"
+                      min="5"
+                      max="100"
+                      id="openness"
+                      name="openness"
+                      value="20"
+                      required
+                    />
+                    <label for="conscientiousness" class="inline-label"
+                      >Conscientiousness</label
+                    >
+
+                    <input
+                      type="number"
+                      step="5"
+                      min="5"
+                      max="100"
+                      id="conscientiousness"
+                      name="conscientiousness"
+                      value="20"
+                      required
+                    />
+                    <label for="extraversion" class="inline-label"
+                      >Extraversion</label
+                    >
+
+                    <input
+                      type="number"
+                      step="5"
+                      min="5"
+                      max="100"
+                      id="extraversion"
+                      name="extraversion"
+                      value="20"
+                      required
+                    />
+                    <label for="agreeableness" class="inline-label"
+                      >Agreeableness</label
+                    >
+
+                    <input
+                      type="number"
+                      step="5"
+                      min="5"
+                      max="100"
+                      id="agreeableness"
+                      name="agreeableness"
+                      value="20"
+                      required
+                    />
+                    <label for="neuroticism" class="inline-label"
+                      >Neuroticism</label
+                    >
+
+                    <input
+                      type="number"
+                      step="5"
+                      min="5"
+                      max="100"
+                      id="neuroticism"
+                      name="neuroticism"
+                      value="20"
+                      required
+                    />
+                  </div>
+                  <h3
+                    style="
+                      padding-top: 45px;
+                      border-bottom: 1.5px solid rgb(110, 110, 110);
+                      width: 35%;
+                    "
+                  >
+                    TECHNICAL QUESTIONS
+                  </h3>
+                  <div class="file-upload-wrapper">
+                    <div class="file-upload">
+                      <label for="excelFile" class="inline-label"
+                        >Upload Excel File</label
+                      >
+
+                      <input
+                        type="file"
+                        id="excelFile"
+                        name="excelFile"
+                        accept=".xlsx, .xls"
+                        required
+                      />
+                    </div>
+                  </div>
+                </section>
+
+                <button type="submit">Submit</button>
+              </form>
+
+              <div id="recruitment-process-popup" class="popup">
+                <div class="popup-content">
+                  <span class="close-button" id="close-popup">&times;</span>
+                  <p class="success-message">Job posting successful!</p>
+                  <hr />
+                </div>
+              </div>
+
+              <script src="recruitmentProcess.js"></script>
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+              <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                  <span>&copy; 2023 All rights reserved, BayfaMeta&reg</span>
+                </div>
+              </div>
+            </footer>
+            <!-- End of Footer -->
+          </div>
+        </div>
+        <!-- End of Content Wrapper -->
+      </div>
+      <!-- End of Page Wrapper -->
+
+      <!-- Scroll to Top Button-->
+      <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+      </a>
+
+      <!-- Logout Modal-->
+      <div
+        class="modal fade"
+        id="logoutModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Ready to Leave?
+              </h5>
+              <button
+                class="close"
+                type="button"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Select "Logout" below if you are ready to end your current
+              session.
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-secondary"
+                type="button"
+                data-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <a class="btn btn-primary" href="../Login-Registration/login.html"
+                >Logout</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bootstrap core JavaScript-->
+      <script src="../Home Page/vendor/jquery/jquery.min.js"></script>
+      <script src="../Home Page/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+      <!-- Core plugin JavaScript-->
+      <script src="../Home Page/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+      <!-- Custom scripts for all pages-->
+      <script src="../Home Page/js/sb-admin-2.min.js"></script>
+
+      <!-- Page level plugins -->
+      <script src="../Home Page/vendor/chart.js/Chart.min.js"></script>
+
+      <!-- Page level custom scripts -->
+      <script src="../Home Page/js/demo/chart-area-demo.js"></script>
+      <script src="../Home Page/js/demo/chart-pie-demo.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+      <script>
+        flatpickr("#firstStageEndDate", {
+          dateFormat: "d/m/Y H:i",
+          enableTime: true,
+          time_24hr: true,
+          defaultDate: "today",
+        });
+
+        flatpickr("#secondStageEndDate", {
+          dateFormat: "d/m/Y H:i",
+          enableTime: true,
+          time_24hr: true,
+          defaultDate: "today",
+        });
+      </script>
+    </body>
+  </html>
+</html>
