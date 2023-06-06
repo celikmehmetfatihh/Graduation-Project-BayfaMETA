@@ -1,1 +1,1 @@
-BayfaMETA is an automatic recruitment system designed by Doğukan Baysal, Mehmet Fatih Çelik, Ata Kaleli, Melisa Çağılgan supervised by Mariam Hmila in METU. I worked on the backend and automatic testing part of this project.
+BayfaMETA is an automatic recruitment system designed by Doğukan Baysal, Mehmet Fatih Çelik, Ata Kaleli, Melisa Çağılgan supervised by Mariam Hmila in METU. I worked on the backend and automatic testing part of this project. You can find detailed information about our application in BAYFAMETA.pdf.
